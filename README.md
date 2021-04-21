@@ -1,1 +1,1 @@
-# style-switches
+# Project style-switches
