@@ -1,5 +1,4 @@
 import './Header.css'
-import logoBlack from '../images/calc.svg'
 import styled from 'styled-components'
 
 const HeaderStyled = styled.header`
@@ -42,7 +41,6 @@ const Title = styled.h1`
 function Header(props) {
     return (
         <HeaderStyled>
-            <img className="header__icon" src={logoBlack} />
             <div className="header__container">
                 <Link className="header__link" href="#">Home</Link>
                 <Link className="header__link" href="#">About</Link>
