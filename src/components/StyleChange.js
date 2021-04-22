@@ -98,7 +98,7 @@ function StyleChange(props) {
             <Button onClick={secondThemeChanger} className="styles__button">Style 2</Button>
             <Button onClick={thirdThemeChanger} className="styles__button">Style 3</Button>
             <Button onClick={fourthThemeChanger} className="styles__button">Style 4</Button>
-            <p className="styles__text">This is change style buttons. They will eventually change background color, text color and probably more</p>
+            <p className="styles__text">This is change style buttons. They change background color, text color and button color</p>
         </Section>
     )
 }
