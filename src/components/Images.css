@@ -1,0 +1,28 @@
+.images {
+    position: relative;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 250px);
+    row-gap: 20px;
+    column-gap: 20px;
+    justify-content: center;
+    background-color: #95D7AE;
+    padding-bottom: 15px;
+}
+
+.images__item {
+    height: 250px;
+    width: 250px;
+    object-fit: cover;
+}
+
+@media (max-width: 805px) {
+    .images {
+        grid-template-columns: 300px;
+    }
+
+    .images__item {
+        height: 300px;
+        width: 300px;
+    }
+}
