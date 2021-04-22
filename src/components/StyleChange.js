@@ -93,12 +93,12 @@ function StyleChange(props) {
 
     return (
         <Section>
-            <Title>Choose page style</Title>
-            <Button onClick={firstThemeChanger} className="styles__button">Style 1</Button>
-            <Button onClick={secondThemeChanger} className="styles__button">Style 2</Button>
-            <Button onClick={thirdThemeChanger} className="styles__button">Style 3</Button>
-            <Button onClick={fourthThemeChanger} className="styles__button">Style 4</Button>
-            <p className="styles__text">This is change style buttons. They change background color, text color and button color</p>
+            <Title>Выберите стиль страницы</Title>
+            <Button onClick={firstThemeChanger} className="styles__button">Стиль 1</Button>
+            <Button onClick={secondThemeChanger} className="styles__button">Стиль 2</Button>
+            <Button onClick={thirdThemeChanger} className="styles__button">Стиль 3</Button>
+            <Button onClick={fourthThemeChanger} className="styles__button">Стиль 4</Button>
+            <p className="styles__text">Это кнопки выбора стиля, они меняют цвет фона, текста и цвет кнопок</p>
         </Section>
     )
 }

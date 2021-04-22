@@ -21,17 +21,17 @@ function Footer() {
     return (
         <Section className="footer">
             <ul className="footer__copyright">
-                <li>Social goes here</li>
-                <li>Copyright goes here</li>
+                <li>Ссылки на соцсети</li>
+                <li>Копирайт сюда</li>
             </ul>
             <div className="footer__links">
                 <ul className="footer__column">
-                    <Link className="footer__link" href="#">Link goes here</Link>
-                    <Link className="footer__link" href="#">Link goes here</Link>
+                    <Link className="footer__link" href="#">Ссылка</Link>
+                    <Link className="footer__link" href="#">Ссылка</Link>
                 </ul>
                 <ul className="footer__column">
-                    <Link className="footer__link" href="#">Link goes here</Link>
-                    <Link className="footer__link" href="#">Link goes here</Link>
+                    <Link className="footer__link" href="#">Ссылка</Link>
+                    <Link className="footer__link" href="#">Ссылка</Link>
                 </ul>
             </div>
         </Section>

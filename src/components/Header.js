@@ -42,13 +42,13 @@ function Header(props) {
     return (
         <HeaderStyled>
             <div className="header__container">
-                <Link className="header__link" href="#">Home</Link>
-                <Link className="header__link" href="#">About</Link>
+                <Link className="header__link" href="#">Ссылка</Link>
+                <Link className="header__link" href="#">Ссылка</Link>
             </div>
             <div className="header__paragraph">
-                <Title className="header__title">Placeholder text</Title>
+                <Title className="header__title">Тестовый текст</Title>
                 <p className="header__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed ullamcorper morbi tincidunt ornare. Vel orci porta non pulvinar. Cursus mattis molestie a iaculis at erat pellentesque adipiscing commodo. Eget est lorem ipsum dolor sit amet consectetur. Neque sodales ut etiam sit amet nisl purus in mollis. Mattis aliquam faucibus purus in massa tempor.</p>
-                <Button className="header__button">Big button</Button>
+                <Button className="header__button">Большая кнопка</Button>
             </div>
         </HeaderStyled>
     )
