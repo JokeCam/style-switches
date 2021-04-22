@@ -1,5 +1,6 @@
 .header {
     background-color: #95D7AE;
+    color: #454851;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -21,15 +22,8 @@
 }
 
 .header__paragraph {
-    color: #454851;
     flex-basis: 100%;
     font-weight: normal;
-}
-
-.header__title {
-    margin: 10px 0 0;
-    padding-top: 5px;
-    border-top: 1px solid #454851;
 }
 
 .header__button {
@@ -52,12 +46,6 @@
 
 .header__button:active {
     transform: scale(0.98);
-}
-
-.header__link {
-    color: #454851;
-    text-decoration: none;
-    transition: opacity 0.5s;
 }
 
 .header__link:hover {

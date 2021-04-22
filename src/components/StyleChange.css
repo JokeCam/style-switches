@@ -1,40 +1,7 @@
-.styles {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-content: space-around;
-    padding: 20px 10px 0;
-    background-color: #95D7AE;
-    color: #454851;
-}
-
-.styles__title {
-    border-top: 1px solid #454851;
-    margin-top: 0;
-    padding-top: 10px;
-    flex-basis: 100%;
-    text-align: center;
-}
-
 .styles__text {
     text-align: center;
     margin-top: 20px;
     flex-basis: 100%;
-}
-
-.styles__button {
-    margin: 0;
-    padding: 0;
-    height: 40px;
-    width: 90px;
-    border:none;
-    outline: none;
-    background-color: #7BAE7F;
-    color: #454851;
-    transition: opacity 0.5s;
-    cursor: pointer;
-    flex-basis: 20%;
-    border: 0.5px solid #454851;
 }
 
 .styles__button:hover {
