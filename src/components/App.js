@@ -5,6 +5,7 @@ import Header from './Header.js'
 import StyleChange from './StyleChange.js'
 import Images from './Images.js'
 import Footer from './Footer.js'
+import HourGlass from './HourGlass.js'
 
 const DefaultTheme = {  
   pageBackground: '#95D7AE',
@@ -52,12 +53,15 @@ const themes = {
 function App() {
   const [theme, setTheme] = useState('default')
 
+  const [hourGlassAnim, setHourGlassAnim] = useState(false)
+
   const contentStyle = {
     backgroundColor: `${themes[theme].background}`,
     transition: 'all .5s ease',
     position: 'fixed',
     width: '100%',
-    height: '100%'
+    height: '100%',
+    overflowY: 'scroll'
   };
 
   return (
@@ -65,9 +69,10 @@ function App() {
       <div className="app">
         <ThemeProvider theme={themes[theme]}>
           <Header theme={theme} />
-          <StyleChange theme={theme} setTheme={setTheme} />
+          <StyleChange theme={theme} setTheme={setTheme} setHourGlassAnim={setHourGlassAnim}/>
           <Images theme={theme} />
           <Footer theme={theme} />
+          <HourGlass hourGlassAnim={hourGlassAnim}/>
         </ThemeProvider>
       </div>
     </div>

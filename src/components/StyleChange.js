@@ -42,31 +42,53 @@ const Button = styled.button`
     }
 `;
 
-function StyleChange (props) {
-    function firstThemeChanger(){
+function StyleChange(props) {
+    function firstThemeChanger() {
+        props.setHourGlassAnim(true)
         setTimeout(() => {
-            if(props.theme !== 'first'){
+            if (props.theme !== 'first') {
+                props.setHourGlassAnim(false)
                 props.setTheme('first')
-            } else props.setTheme('default')
+            } else
+                props.setTheme('default')
+            props.setHourGlassAnim(false)
         }, 1000);
     }
 
-    function secondThemeChanger(){
-        if(props.theme !== 'second'){
-            props.setTheme('second')
-        } else props.setTheme('default')
+    function secondThemeChanger() {
+        props.setHourGlassAnim(true)
+        setTimeout(() => {
+            if (props.theme !== 'second') {
+                props.setHourGlassAnim(false)
+                props.setTheme('second')
+            } else
+                props.setTheme('default')
+            props.setHourGlassAnim(false)
+        }, 1000);
     }
 
-    function thirdThemeChanger(){
-        if(props.theme !== 'third'){
-            props.setTheme('third')
-        } else props.setTheme('default')
+    function thirdThemeChanger() {
+        props.setHourGlassAnim(true)
+        setTimeout(() => {
+            if (props.theme !== 'third') {
+                props.setHourGlassAnim(false)
+                props.setTheme('third')
+            } else
+                props.setTheme('default')
+            props.setHourGlassAnim(false)
+        }, 1000);
     }
 
-    function fourthThemeChanger(){
-        if(props.theme !== 'fourth'){
-            props.setTheme('fourth')
-        } else props.setTheme('default')
+    function fourthThemeChanger() {
+        props.setHourGlassAnim(true)
+        setTimeout(() => {
+            if (props.theme !== 'fourth') {
+                props.setHourGlassAnim(false)
+                props.setTheme('fourth')
+            } else
+                props.setTheme('default')
+            props.setHourGlassAnim(false)
+        }, 1000);
     }
 
     return (
@@ -74,7 +96,7 @@ function StyleChange (props) {
             <Title>Choose page style</Title>
             <Button onClick={firstThemeChanger} className="styles__button">Style 1</Button>
             <Button onClick={secondThemeChanger} className="styles__button">Style 2</Button>
-            <Button onClick={thirdThemeChanger}className="styles__button">Style 3</Button>
+            <Button onClick={thirdThemeChanger} className="styles__button">Style 3</Button>
             <Button onClick={fourthThemeChanger} className="styles__button">Style 4</Button>
             <p className="styles__text">This is change style buttons. They will eventually change background color, text color and probably more</p>
         </Section>
