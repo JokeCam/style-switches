@@ -85,28 +85,56 @@ const TargetName = styled.p`
 
 const TargetValue = styled.p`
     color: ${props => props.theme.color};
-    margin: 0;
+    margin: 0 10px 0 0;
     font-size: large;
     transition: all .5s ease;
+`;
+
+const PopupWrapper = styled.button`
+    max-width: 500px;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: ${props => props.theme.color};
+    background-color: ${props => props.theme.pageBackground};
+    z-index: 1;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    transition: all .5s ease;
+    &:hover{
+        opacity: 60%;
+    }
 `;
 
 function Currency(props) {
     const [openCurrencies, setOpenCurrencies] = useState(false)
     const [openCurrencyTarget, setOpenCurrencyTarget] = useState(false)
+    const [openPopup, setOpenPopup] = useState(false)
     const [currentCurrency, setCurrentCurrency] = useState({})
+
+    function popupClose(){
+        setOpenPopup(false)
+    }
 
     function showCurrencies() {
         if (openCurrencies) {
             setOpenCurrencies(false)
             setOpenCurrencyTarget(false)
+            setOpenPopup(false)
         } else
-        setOpenCurrencies(true)
+            setOpenCurrencies(true)
         setOpenCurrencyTarget(false)
     }
 
     function currencyTargetClick() {
         if (!openCurrencyTarget) {
             setOpenCurrencyTarget(true)
+            setOpenPopup(true)
         }
     }
 
@@ -128,7 +156,7 @@ function Currency(props) {
         <Section>
             <Title className="currency__title" onClick={showCurrencies}>Курсы валют</Title>
             <div className={`currency__chosen ${openCurrencyTarget ? 'currency__chosen_displayed' : ''}`}>
-                <img className="currency__image" src={`https://flagcdn.com/28x21/${props.currencyCountries[currentCurrencyShort]}.png`}></img>
+                <img className="currency__image" alt="Иконка флага" src={`https://flagcdn.com/28x21/${props.currencyCountries[currentCurrencyShort]}.png`}></img>
                 <TargetName className="currency__target">{currentCurrency.full}</TargetName>
                 <TargetValue className="currency__value">{currentCurrency.amount}</TargetValue>
             </div>
@@ -162,6 +190,13 @@ function Currency(props) {
                         })
                     }
                 </div>
+            </div>
+            <div className={`currency__popup ${openPopup ? 'currency__popup_opened' : ''}`}>
+                <PopupWrapper type="button" onClick={popupClose}>
+                    <img className="currency__image" alt="Иконка флага" src={`https://flagcdn.com/28x21/${props.currencyCountries[currentCurrencyShort]}.png`}></img>
+                    <TargetName className="currency__target">{currentCurrency.full}</TargetName>
+                    <TargetValue className="currency__value">{currentCurrency.amount}</TargetValue>
+                </PopupWrapper>
             </div>
         </Section>
     )

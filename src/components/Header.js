@@ -16,6 +16,9 @@ const Link = styled.a`
     color: ${props => props.theme.color};
     text-decoration: none;
     transition: all .5s ease;
+    &:hover{
+        opacity: 60%;   
+    }
 `;
 
 const Button = styled.button`
@@ -30,6 +33,12 @@ const Button = styled.button`
     transition: all .5s ease;
     cursor: pointer;
     border: 0.5px solid #454851;
+    &:hover{
+        opacity: 60%;
+    }
+    &:active{
+        transform: scale(0.98);
+    }
 `;
 
 const Title = styled.h1`

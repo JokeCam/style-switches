@@ -36,6 +36,7 @@
 }
 
 .currency__image {
+    margin-left: 10px;
     height: 21px;
     width: 28px;
 }
@@ -61,4 +62,14 @@
 
 .currency__type {
     margin-bottom: 5px;
+}
+
+.currency__popup {
+    position: fixed;
+    display: none;
+    top: 30px;
+}
+
+.currency__popup_opened {
+    display: flex;
 }

@@ -39,15 +39,3 @@
     cursor: pointer;
     border: 0.5px solid #454851;
 }
-
-.header__button:hover {
-    opacity: 60%;
-}
-
-.header__button:active {
-    transform: scale(0.98);
-}
-
-.header__link:hover {
-    opacity: 60%;
-}
