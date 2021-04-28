@@ -35,10 +35,11 @@ const Button = styled.button`
     flex-basis: 20%;
     border: 0.5px solid #454851;
     transition: all .5s ease;
-    $:hover {
-        button{
-            opacity: 60%;
-        }
+    &:hover {
+        opacity: 60%;
+    }
+    &:active {
+        transform: scale(0.95);
     }
 `;
 

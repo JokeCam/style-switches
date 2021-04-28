@@ -14,7 +14,10 @@ const Section = styled.footer`
 const Link = styled.a`
     text-decoration: none;
     transition: opacity 0.5s;
-    color: ${props => props.theme.color}
+    color: ${props => props.theme.color};
+    &:hover{
+        opacity: 60%;
+    }
 `;
 
 function Footer() {
@@ -26,12 +29,12 @@ function Footer() {
             </ul>
             <div className="footer__links">
                 <ul className="footer__column">
-                    <Link className="footer__link" href="#">Ссылка</Link>
-                    <Link className="footer__link" href="#">Ссылка</Link>
+                    <Link href="#">Ссылка</Link>
+                    <Link href="#">Ссылка</Link>
                 </ul>
                 <ul className="footer__column">
-                    <Link className="footer__link" href="#">Ссылка</Link>
-                    <Link className="footer__link" href="#">Ссылка</Link>
+                    <Link href="#">Ссылка</Link>
+                    <Link href="#">Ссылка</Link>
                 </ul>
             </div>
         </Section>

@@ -3,11 +3,3 @@
     margin-top: 20px;
     flex-basis: 100%;
 }
-
-.styles__button:hover {
-    opacity: 60%;
-}
-
-.styles__button:active {
-    transform: scale(0.95);
-}

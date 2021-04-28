@@ -26,16 +26,6 @@ ul {
   margin-left: 20px;
 }
 
-.footer__link {
-  text-decoration: none;
-  transition: opacity 0.5s;
-  color: #454851
-}
-
-.footer__link:hover {
-  opacity: 60%;
-}
-
 @media (max-width:500px) {
   .footer {
     font-size: 14px;
