@@ -6,7 +6,7 @@ const Section = styled.div`
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-content: space-around;
-    padding: 20px 10px 0;
+    padding: 15px 10px 0;
     background-color: ${props => props.theme.pageBackground};
     color: ${props => props.theme.color};
     transition: all .5s ease;
